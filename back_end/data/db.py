@@ -3,9 +3,10 @@ import sqlite3
 from sqlite3 import Error
 from contextlib import closing
 from data.models import Student
+from pathlib import Path
 
 
-DB_PATH = r"C:\Users\rober\CodingProjects\WebDevIntro\Student_ID\back_end\data\pythonsqlite.db"
+DB_PATH = str(Path(__file__).parent / "pythonsqlite.db")
 
 
 def get_conn():

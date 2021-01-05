@@ -28,7 +28,7 @@ def student_table():
 
 @app.get("/")
 def read_root():
-    return {"Hello": "Wooooorld"}
+    return {"Hello": "World"}
 
 @app.post("/students")
 async def new_student(student: Student):
