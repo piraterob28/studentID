@@ -1,22 +1,4 @@
 #_init_.py
-import sqlite3
-from sqlite3 import Error
+from pathlib import Path
 
-def create_connection(db_file):
-    """create a database connection to a SQLite database"""
-    conn = None
-
-    try:
-        conn=sqlite3.connect(db_file)
-        print(sqlite3.version)
-        print(conn.total_changes)
-
-    except Error as e:
-        print(e)
-
-    finally:
-        if conn:
-            conn.close()
-
-
-create_connection(r"C:\Users\rober\CodingProjects\WebDevIntro\Student_ID\back_end\data\pythonsqlite.db")
+DB_PATH = str(Path(__file__).parent / "pythonsqlite.db")

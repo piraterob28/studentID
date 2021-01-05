@@ -3,10 +3,7 @@ import sqlite3
 from sqlite3 import Error
 from contextlib import closing
 from data.models import Student
-from pathlib import Path
-
-
-DB_PATH = str(Path(__file__).parent / "pythonsqlite.db")
+from . import DB_PATH
 
 
 def get_conn():
@@ -27,10 +24,3 @@ def add_student(student: Student):
     cursor = connection.cursor()
     cursor.execute(f"INSERT INTO students VALUES (?,?,?,?,?)", (student.studentid, student.studentname, student.building, student.department, student.year))
     connection.commit()
-
-
-
-
-
-
-
