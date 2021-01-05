@@ -13,12 +13,6 @@
                 <img id="cave-image" src="..\Images\cave.jpg" width=300px>
             </p>
         </div> 
-
-
-
-
-
-
   </div>
  
 </template>

@@ -18,8 +18,6 @@
 </template>
 
 <script>
-
-
 export default {
     data () { return {
         studentAddForm: {
@@ -51,10 +49,7 @@ export default {
         })
 
         }
-
-    }
-
-    
+    }   
 }
 </script>
 
@@ -69,6 +64,4 @@ button {
     background-color: #1B4079;
     color: white;
 }
-
-
 </style>
