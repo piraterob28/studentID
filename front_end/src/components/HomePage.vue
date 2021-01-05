@@ -1,3 +1,3 @@
 <template>
-   <p> well high there </p>
+   <p> Welcome to the Samsquatch School of Mystery </p>
 </template>
